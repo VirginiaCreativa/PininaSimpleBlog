@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
 import { hot } from 'react-hot-loader';
+import Home from './containers/Home';
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+  state = {};
 
   render() {
-    return <h1>Hello</h1>;
+    return <Home />;
   }
 }
 
