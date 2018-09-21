@@ -19,7 +19,16 @@ module.exports = {
               sourceMap: true,
               modules: true,
               camelCase: true,
+              importLoaders: 1,
               localIdentName: '[local]___[hash:base64:5]',
+            },
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              plugins() {
+                return [require('precss'), require('autoprefixer')];
+              },
             },
           },
           'sass-loader',

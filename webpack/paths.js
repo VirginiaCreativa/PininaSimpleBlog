@@ -8,6 +8,7 @@ module.exports = {
     imports: path.resolve(__dirname, '../', 'src/scripts/imports.js'),
   },
   templatePath: path.resolve(__dirname, '../', 'src/index.html'),
+  bootstrappPath: path.resolve(__dirname, 'node_modules/bootstrap'),
   imagesFolder: 'images',
   fontsFolder: 'fonts',
   cssFolder: 'css',
