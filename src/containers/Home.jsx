@@ -7,15 +7,8 @@ class Home extends Component {
       <>
         <div className={bootstrapGrid.container}>
           <h3>HELLO</h3>
-          <p>
-            Ullamcorper condimentum urna.Curabitur accumsan sem et nisi
-            ultricies porttitor.Aliquam sed nunc elit.Nunc faucibus interdum
-            mauris at mattis.Phasellus congue volutpat porttitor.Vivamus
-            fringilla iaculis ex, et condimentum magna pharetra id.Aliquam erat
-            volutpat.Nam odio velit, egestas vel leo tempus, luctus dapibus
-            mauris{' '}
-          </p>
-          <p>Creativity Is More Than A Song And Dance Act</p>
+          <p>Virginia Velásquez Soto</p>
+          <p>33 age</p>
         </div>
       </>
     );

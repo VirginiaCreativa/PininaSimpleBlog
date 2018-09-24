@@ -46,15 +46,18 @@ module.exports = {
       },
     ],
   },
+  devtool: 'inline-source-map',
   serve: {
     add: app => {
       app.use(convert(history()));
     },
     content: commonPaths.entryPath,
     dev: {
-      publicPath: commonPaths.outputPath,
+      publicPath: commonPaths.root,
     },
     open: true,
+    port: 3000,
+    reload: true,
   },
   resolve: {
     modules: ['src', 'node_modules'],
@@ -64,6 +67,7 @@ module.exports = {
     new webpack.ProgressPlugin(),
     new HtmlWebpackPlugin({
       template: commonPaths.templatePath,
+      filename: 'index.html',
     }),
   ],
 };
