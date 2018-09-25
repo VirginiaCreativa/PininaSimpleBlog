@@ -66,7 +66,7 @@ module.exports = {
     dev: {
       publicPath: commonPaths.root,
     },
-    open: true,
+    open: false,
     port: 3000,
     reload: true,
   },
