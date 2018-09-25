@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
 import bootstrapGrid from 'bootstrap/scss/bootstrap-grid.scss';
+import Layout from '../hoc/Layout/Layout';
 
 class Home extends Component {
+  state = {};
+
   render() {
     return (
-      <>
+      <React.Fragment>
         <div className={bootstrapGrid.container}>
-          <h3>HELLO</h3>
-          <p>Virginia Velásquez Soto</p>
-          <p>33 age</p>
+          <Layout>Hola!</Layout>
         </div>
-      </>
+      </React.Fragment>
     );
   }
 }
