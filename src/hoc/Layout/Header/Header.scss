@@ -1,0 +1,29 @@
+.baseDoubleLine {
+  content: '==';
+  display: inline-block;
+  letter-spacing: -3px;
+  top: -1px;
+  position: relative;
+}
+.Logo {
+  text-align: right;
+  h1 {
+    font-size: 4rem;
+    color: $black;
+    margin-bottom: 0;
+  }
+  h6 {
+    text-transform: uppercase;
+    color: $gray_dark;
+    font-weight: 300;
+    position: relative;
+    &:after {
+      @extend .baseDoubleLine;
+      margin-left: 6px;
+    }
+     &:before {
+      @extend .baseDoubleLine;
+       margin-right: 7px;
+     }
+  }
+}
