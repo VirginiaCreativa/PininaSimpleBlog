@@ -4,8 +4,8 @@
   "description": "Boilerplate for react and webpack",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=development  webpack-serve && nodemon server.js",
-    "server": "nodemon server.js",
+    "start": "cross-env NODE_ENV=development  webpack-serve && nodemon server/app.js",
+    "server": "nodemon server/app.js",
     "prod": "cross-env NODE_ENV=production webpack",
     "format": "prettier --write 'packages/**/*.js'",
     "test": "jest --watchAll --coverage",
@@ -50,6 +50,8 @@
   },
   "dependencies": {
     "lodash": "4.17.11",
+    "mongodb": "^3.1.6",
+    "mongoose": "^5.2.17",
     "npm-check-updates": "^2.14.2",
     "prop-types": "15.6.2",
     "react": "16.5.1",
