@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import bootstrapGrid from 'bootstrap/scss/bootstrap-grid.scss';
 import Layout from '../hoc/Layout/Layout';
 
 class Home extends Component {
@@ -8,9 +7,7 @@ class Home extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className={bootstrapGrid.container}>
-          <Layout>Hola!</Layout>
-        </div>
+        <Layout>Hola!</Layout>
       </React.Fragment>
     );
   }
