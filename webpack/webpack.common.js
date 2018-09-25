@@ -34,6 +34,17 @@ module.exports = {
         ],
       },
       {
+        test: /\.(json)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              outputPath: commonPaths.jsonFolder,
+            },
+          },
+        ],
+      },
+      {
         test: /\.(woff2|ttf|woff|eot)$/,
         use: [
           {
@@ -61,7 +72,7 @@ module.exports = {
   },
   resolve: {
     modules: ['src', 'node_modules'],
-    extensions: ['*', '.js', '.jsx', '.css', '.scss'],
+    extensions: ['*', '.js', '.jsx', '.json', '.css', '.scss'],
   },
   plugins: [
     new webpack.ProgressPlugin(),

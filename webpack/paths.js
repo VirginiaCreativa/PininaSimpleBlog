@@ -10,6 +10,7 @@ module.exports = {
   templatePath: path.resolve(__dirname, '../', 'src/index.html'),
   imagesFolder: 'images',
   fontsFolder: 'fonts',
+  jsonFolder: 'json',
   cssFolder: 'css',
   jsFolder: 'js',
 };
