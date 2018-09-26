@@ -1,9 +1,9 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import bootstrap from 'bootstrap/scss/bootstrap.scss';
+import { withRouter } from 'react-router';
 import Aux from '../../Aux/Aux';
 import classes from './Navigations.scss';
-import { withRouter } from 'react-router';
 
 const Header = () => (
   <Aux>
@@ -15,11 +15,7 @@ const Header = () => (
       ].join(' ')}
     >
       <li>
-        <NavLink
-          to="/"
-          className={bootstrap['nav-link']}
-          activeClassName="is-selected"
-        >
+        <NavLink to="/" className={bootstrap['nav-link']}>
           Home
         </NavLink>
       </li>

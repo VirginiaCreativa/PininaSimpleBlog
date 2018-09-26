@@ -15,10 +15,12 @@
         background-color: #ddd;
         color: $black;
       }
-      &.is-selected {
-        background-color: #ddd;
-        color: $black;
-      }  
     }
   }
 } 
+:global {
+  .is-selected {
+    background-color: #ddd;
+    color: $black !important;
+  }  
+}

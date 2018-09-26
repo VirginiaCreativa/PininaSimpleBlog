@@ -7,7 +7,7 @@ class Home extends Component {
   render() {
     return (
       <React.Fragment>
-        <Layout>HOMMEE!</Layout>
+        <h3>HOME</h3>
       </React.Fragment>
     );
   }
