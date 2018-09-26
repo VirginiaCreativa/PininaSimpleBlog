@@ -18,7 +18,7 @@ class App extends Component {
       <React.Fragment>
         <div className={bootstrapGrid.container}>
           <div className={bootstrapGrid.row}>
-            <div className={bootstrapGrid['col-3']}>
+            <div className={bootstrapGrid['col-2']}>
               <div className={[classes.Affix, classes.Nav].join(' ')}>
                 <div className={classes.Center}>
                   <Header />
@@ -26,7 +26,7 @@ class App extends Component {
                 </div>
               </div>
             </div>
-            <div className={bootstrapGrid['col-9']}>
+            <div className={bootstrapGrid['col-10']}>
               <Layout>
                 <Switch>
                   <Route path="/" exact component={Home} />

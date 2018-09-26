@@ -1,0 +1,24 @@
+.Navigations {
+  margin-bottom: 30px !important;
+  width: 100%;
+  li {
+    margin: 4px 0;
+    a {
+      text-align: right;
+      padding: 2px 0;
+      font-family: 'Crete Round', serif;
+      text-transform: uppercase;
+      font-size: 0.8125rem;
+      color: $gray_medium2;
+      transition: all .25s ease;
+      &:hover {
+        background-color: #ddd;
+        color: $black;
+      }
+      &.is-selected {
+        background-color: #ddd;
+        color: $black;
+      }  
+    }
+  }
+} 
