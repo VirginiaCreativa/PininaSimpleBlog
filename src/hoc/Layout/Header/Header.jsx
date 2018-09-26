@@ -2,6 +2,7 @@ import React from 'react';
 import Aux from '../../Aux/Aux';
 import classes from './Header.scss';
 import Nav from './Navigations';
+
 const Header = () => (
   <Aux>
     <div className={classes.Logo}>
