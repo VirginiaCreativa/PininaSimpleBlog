@@ -21,11 +21,11 @@ const Header = () => (
       </li>
       <li>
         <NavLink
-          to="/about"
+          to="/sobre"
           className={bootstrap['nav-link']}
           activeClassName="is-selected"
         >
-          About
+          Sobre de mí
         </NavLink>
       </li>
       <li>
@@ -48,11 +48,11 @@ const Header = () => (
       </li>
       <li>
         <NavLink
-          to="/contact"
+          to="/contactos"
           className={bootstrap['nav-link']}
           activeClassName="is-selected"
         >
-          Contact
+          Contactos
         </NavLink>
       </li>
     </ul>

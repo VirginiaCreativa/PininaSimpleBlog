@@ -8,7 +8,10 @@ import Header from './hoc/Layout/Header/Header';
 import Footer from './hoc/Layout/Footer/Footer';
 import Layout from './hoc/Layout/Layout';
 import Home from './containers/Home';
-import About from './containers/About';
+import Sobre from './containers/Sobre';
+import Ensenanza from './containers/Ensenanza';
+import EstiloDeVida from './containers/EstiloVida';
+import Contactos from './containers/Contactos';
 
 class App extends Component {
   state = {};
@@ -30,7 +33,10 @@ class App extends Component {
               <Layout>
                 <Switch>
                   <Route path="/" exact component={Home} />
-                  <Route path="/about" component={About} />
+                  <Route path="/sobre" component={Sobre} />
+                  <Route path="/ensenanza" component={Ensenanza} />
+                  <Route path="/estilodevida" component={EstiloDeVida} />
+                  <Route path="/contactos" component={Contactos} />
                   <Redirect to="/" />
                 </Switch>
               </Layout>
