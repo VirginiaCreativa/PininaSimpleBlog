@@ -1,0 +1,27 @@
+.Redes {
+  width: 100%;
+  ul {
+    float: right;
+    margin-bottom: 0;
+    li {
+      svg {
+        color: $gray_dark !important;
+        &:hover {
+          color: $gray_medium2 !important;
+        }
+      }
+    }
+  }
+}
+.Info {
+  p {
+    font-size: 11px;
+    text-align: right !important;
+    margin-bottom: 0 !important;
+    color: $gray_medium2;
+    span {
+      color: $gray_dark;
+      font-weight: 700;
+    } 
+  }
+}
