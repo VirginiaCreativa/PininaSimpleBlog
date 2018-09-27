@@ -1,0 +1,15 @@
+.Affix {
+  position: fixed;
+}
+
+.Nav {
+  height: 100vh;
+
+  .Center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+  }
+}
