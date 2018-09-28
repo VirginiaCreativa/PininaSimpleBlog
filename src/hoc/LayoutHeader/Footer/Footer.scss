@@ -1,11 +1,14 @@
 .Redes {
   width: 100%;
   ul {
-    float: right;
+    text-align: right;
     margin-bottom: 0;
     li {
       svg {
         color: $gray_dark !important;
+        @media (max-width: 575.98px) {
+          color: #fff !important;
+        }
         &:hover {
           color: $gray_medium2 !important;
         }
@@ -19,8 +22,15 @@
     text-align: right !important;
     margin-bottom: 0 !important;
     color: $gray_medium2;
+    @media (max-width: 575.98px) {
+      color: #fff !important;
+      text-align: center !important;
+    }
     span {
       color: $gray_dark;
+      @media (max-width: 575.98px) {
+        color: #fff !important;
+      }
       font-weight: 700;
     } 
   }
