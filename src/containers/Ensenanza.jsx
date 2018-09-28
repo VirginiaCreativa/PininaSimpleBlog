@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Layout from '../hoc/Layout/Layout';
 
-class About extends Component {
+class Ensenanza extends Component {
   state = {};
 
   render() {
@@ -13,4 +13,4 @@ class About extends Component {
   }
 }
 
-export default About;
+export default Ensenanza;

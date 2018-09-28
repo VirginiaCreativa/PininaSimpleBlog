@@ -5,6 +5,7 @@ import { Router, Route, Switch, Redirect } from 'react-router-dom';
 import bootstrapGrid from 'bootstrap/scss/bootstrap-grid.scss';
 import bootstrap from 'bootstrap/scss/bootstrap.scss';
 import LayoutHeader from './hoc/LayoutHeader/LayoutHeader';
+import HeaderSidedrawer from './hoc/LayoutHeader/Navigations/SideDrawer/HeaderSidedrawer';
 import Layout from './hoc/Layout/Layout';
 import Home from './containers/Home';
 import Sobre from './containers/Sobre';
@@ -22,19 +23,21 @@ class App extends Component {
           <div className={bootstrapGrid.row}>
             <div
               className={[
-                bootstrapGrid['col-2'],
-                bootstrap['d-none'],
-                bootstrap['d-md-block'],
+                bootstrapGrid['d-none'],
+                bootstrapGrid['d-sm-none'],
+                bootstrapGrid['d-md-block'],
+                bootstrapGrid['col-md-2'],
               ].join(' ')}
             >
               <LayoutHeader />
             </div>
             <div
               className={[
+                bootstrapGrid['col-sm-auto'],
                 bootstrapGrid['col-md-10'],
-                bootstrapGrid['col-sm-12'],
               ].join(' ')}
             >
+              <HeaderSidedrawer />
               <Layout>
                 <Switch>
                   <Route path="/" exact component={Home} />

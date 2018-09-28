@@ -67,9 +67,10 @@
     "import/no-extraneous-dependencies": 0,
     "import/extensions": 0,
     "babel/object-curly-spacing": 0,
-    "no-console": 0,
     "no-path-concat": 0,
-    "no-unused-vars": 0
+    "no-console": 0,
+    "no-unused-vars": 0,
+    "react/prop-types": 0
   },
   "env": {
     "es6": true,

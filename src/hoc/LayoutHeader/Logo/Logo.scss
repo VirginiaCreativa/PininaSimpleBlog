@@ -1,0 +1,42 @@
+.baseDoubleLine {
+  content: '==';
+  display: inline-block;
+  letter-spacing: -3px;
+  top: -1px;
+  position: relative;
+}
+
+.Logo {
+  text-align: right;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  @media (max-width: 575.98px) {
+    margin-bottom: 0;
+  }
+
+  h1 {
+    font-family: 'Fjalla One' !important;
+    font-size: 3.125rem;
+    color: $black;
+    margin-bottom: 0;
+    font-weight: 700;
+  }
+
+  h6 {
+    font-family: 'Lato' !important;
+    text-transform: uppercase;
+    color: $gray_medium2;
+    font-size: 0.8125rem;
+    position: relative;
+
+    &:after {
+      @extend .baseDoubleLine;
+      margin-left: 6px;
+    }
+
+    &:before {
+      @extend .baseDoubleLine;
+      margin-right: 7px;
+    }
+  }
+}
