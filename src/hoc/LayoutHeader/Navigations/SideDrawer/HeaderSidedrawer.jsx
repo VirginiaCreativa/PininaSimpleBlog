@@ -4,7 +4,7 @@ import Logo from '../../Logo/Logo';
 
 const HeaderSidedrawer = () => (
   <Aux>
-    <Logo sizeTitle="4.75" />
+    <Logo sizeLogo="4.75" alignLogo="center" />
   </Aux>
 );
 export default HeaderSidedrawer;
