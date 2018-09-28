@@ -10,7 +10,7 @@ const SideDrawer = () => (
     <div className={classes.SideDrawer}>
       <div className={classes.Center}>
         <Logo sizeLogo="3.825" alignLogo="center" colorLogo="#fff" />
-        <Navigations navAlign="center" />
+        <Navigations navAlign="center" listSpace="40" />
         <Footer />
       </div>
     </div>

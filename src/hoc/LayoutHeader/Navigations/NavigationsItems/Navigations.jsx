@@ -4,7 +4,7 @@ import Aux from '../../../Aux/Aux';
 import NavItem from './NavigationItem';
 import classes from './Navigations.scss';
 
-const Header = ({ navAlign }) => (
+const Header = ({ navAlign, listSpace }) => (
   <Aux>
     <ul
       className={[
@@ -12,6 +12,7 @@ const Header = ({ navAlign }) => (
         bootstrap['flex-column'],
         classes.Navigations,
       ].join(' ')}
+      style={{ marginTop: listSpace + 'px' }}
     >
       <NavItem navAlign={navAlign} toLink="/" activeClassName={false}>
         Home
