@@ -17,10 +17,10 @@
       }
     }
   }
+  :global {
+    .is-selected {
+      background-color: #ddd;
+      color: $black !important;
+    }  
+  }
 } 
-:global {
-  .is-selected {
-    background-color: #ddd;
-    color: $black !important;
-  }  
-}
