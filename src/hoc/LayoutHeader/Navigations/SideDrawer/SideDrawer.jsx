@@ -5,16 +5,20 @@ import Navigations from '../NavigationsItems/Navigations';
 import Footer from '../../Footer/Footer';
 import classes from './SideDrawer.scss';
 
-const SideDrawer = () => (
-  <Aux>
-    <div className={classes.SideDrawer}>
-      <div className={classes.Center}>
-        <Logo sizeLogo="3.825" alignLogo="center" colorLogo="#fff" />
-        <Navigations navAlign="center" listSpace="40" />
-        <Footer redAlign="center" />
+const SideDrawer = ({ toggleNavbar }) => {
+  const attachedClose = [classes.SideDrawer, classes.Close].join(' ');
+  const attachedOpen = [classes.SideDrawer, classes.Open].join(' ');
+  return (
+    <Aux>
+      <div className={toggleNavbar ? attachedOpen : attachedClose}>
+        <div className={classes.Center}>
+          <Logo sizeLogo="3.825" alignLogo="center" colorLogo="#fff" />
+          <Navigations navAlign="center" listSpace="40" />
+          <Footer redAlign="center" />
+        </div>
       </div>
-    </div>
-  </Aux>
-);
+    </Aux>
+  );
+};
 
 export default SideDrawer;

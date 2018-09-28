@@ -17,16 +17,16 @@ const Header = ({ navAlign, listSpace }) => (
       <NavItem navAlign={navAlign} toLink="/" activeClassName={false}>
         Home
       </NavItem>
-      <NavItem navAlign={navAlign} toLink="/sobre" activeClassName>
+      <NavItem navAlign={navAlign} toLink="/sobre">
         Sobre de mí
       </NavItem>
-      <NavItem navAlign={navAlign} toLink="/ensenanza" activeClassName>
+      <NavItem navAlign={navAlign} toLink="/ensenanza">
         Enseñanza
       </NavItem>
-      <NavItem navAlign={navAlign} toLink="/estilodevida" activeClassName>
+      <NavItem navAlign={navAlign} toLink="/estilodevida">
         Estilo de Vida
       </NavItem>
-      <NavItem navAlign={navAlign} toLink="/contactos" activeClassName>
+      <NavItem navAlign={navAlign} toLink="/contactos">
         Contactos
       </NavItem>
     </ul>

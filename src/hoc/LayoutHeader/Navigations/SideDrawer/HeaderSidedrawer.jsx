@@ -5,7 +5,7 @@ import Logo from '../../Logo/Logo';
 import SideDrawer from './SideDrawer';
 import classes from './HeaderSiderawer.scss';
 
-const HeaderSidedrawer = ({ clicked }) => (
+const HeaderSidedrawer = ({ onShow, toggleNavbar }) => (
   <Aux>
     <div
       className={[
@@ -16,11 +16,11 @@ const HeaderSidedrawer = ({ clicked }) => (
       ].join(' ')}
     >
       <Logo sizeLogo="4.75" alignLogo="center">
-        <div className={classes.Navbar} on>
-          <button className={classes.btnMenu} type="button" />
+        <div className={classes.Navbar}>
+          <button className={classes.btnMenu} type="button" onClick={onShow} />
         </div>
       </Logo>
-      <SideDrawer />
+      <SideDrawer toggleNavbar={toggleNavbar} />
     </div>
   </Aux>
 );

@@ -15,7 +15,7 @@ const NavigationItem = ({ toLink, activeClassName, navAlign, children }) => {
           to={toLink}
           className={bootstrap['nav-link']}
           style={classStyle}
-          activeClassName={activeClassName === true ? 'is-selected' : ''}
+          activeClassName={activeClassName ? 'is-selected' : ' '}
         >
           {children}
         </NavLink>
