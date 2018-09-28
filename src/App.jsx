@@ -26,7 +26,7 @@ class App extends Component {
                 bootstrapGrid['d-none'],
                 bootstrapGrid['d-sm-none'],
                 bootstrapGrid['d-md-block'],
-                bootstrapGrid['col-md-2'],
+                bootstrapGrid['col-md-3'],
               ].join(' ')}
             >
               <LayoutHeader />
@@ -34,7 +34,7 @@ class App extends Component {
             <div
               className={[
                 bootstrapGrid['col-sm-auto'],
-                bootstrapGrid['col-md-10'],
+                bootstrapGrid['col-md-9'],
               ].join(' ')}
             >
               <HeaderSidedrawer />

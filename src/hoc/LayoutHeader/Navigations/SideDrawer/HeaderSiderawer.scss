@@ -1,0 +1,15 @@
+.HeaderSidedrawer {
+  position: relative;
+  padding: 30px 0 !important;
+  .Logo {
+  }
+  .Navbar {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+    img {
+      height: 20px;
+    }
+  }
+}

@@ -2,7 +2,7 @@ import React from 'react';
 import Aux from '../../Aux/Aux';
 import classes from './Logo.scss';
 
-const Logo = ({ sizeLogo, alignLogo }) => {
+const Logo = ({ sizeLogo, alignLogo, children }) => {
   const classStyle = {
     fontSize: sizeLogo + 'rem',
     textAlign: alignLogo,
@@ -12,6 +12,7 @@ const Logo = ({ sizeLogo, alignLogo }) => {
       <div className={classes.Logo} style={classStyle}>
         <h1 style={classStyle}>PININA</h1>
         <h6>Simple Blog</h6>
+        {children}
       </div>
     </Aux>
   );
