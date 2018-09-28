@@ -1,8 +1,12 @@
-.Affix {
+.SideDrawer {
   position: fixed;
-}
-.Nav {
   height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: #222;
+  transition: all .25s ease-out;
+  padding: 0 40px;
   .Center {
     display: flex;
     align-items: center;
@@ -10,4 +14,4 @@
     flex-direction: column;
     height: 100vh;
   }
-}
+} 
