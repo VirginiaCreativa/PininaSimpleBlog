@@ -7,6 +7,10 @@
   background-color: #222;
   transition: all .25s ease-out;
   padding: 0 40px;
+  transform: translateX(-251px);
+  @media (min-width: 575.98px) {
+    display: none;
+  }
   .Center {
     display: flex;
     align-items: center;
@@ -14,4 +18,10 @@
     flex-direction: column;
     height: 100vh;
   }
+}
+.Open {
+  transform: translateX(0)
+}
+.Close {
+  transform: translateX(-251px)
 }
