@@ -1,13 +1,12 @@
 .SideDrawer {
-  position: fixed;
+  position: absolute;
   height: 100vh;
   top: 0;
-  left: 0;
-  z-index: 100;
+  left: -15px;
+  z-index: 200;
   background-color: #222;
-  transition: all .25s ease-out;
+  transition: all 0.3s ease-out;
   padding: 0 40px;
-  transform: translateX(-251px);
   @media (min-width: 575.98px) {
     display: none;
   }
@@ -20,8 +19,17 @@
   }
 }
 .Open {
-  transform: translateX(0)
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
 }
 .Close {
-  transform: translateX(-251px)
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transform: translateX(-100%);
+
 }

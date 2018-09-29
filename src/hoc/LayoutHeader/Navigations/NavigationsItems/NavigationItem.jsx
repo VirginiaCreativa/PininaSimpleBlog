@@ -4,7 +4,13 @@ import bootstrap from 'bootstrap/scss/bootstrap.scss';
 import { withRouter } from 'react-router';
 import Aux from '../../../Aux/Aux';
 
-const NavigationItem = ({ toLink, activeClassName, navAlign, children }) => {
+const NavigationItem = ({
+  toLink,
+  activeClassName,
+  navAlign,
+  children,
+  onSideout,
+}) => {
   const classStyle = {
     textAlign: navAlign,
   };
@@ -16,6 +22,7 @@ const NavigationItem = ({ toLink, activeClassName, navAlign, children }) => {
           className={bootstrap['nav-link']}
           style={classStyle}
           activeClassName={activeClassName ? 'is-selected' : ' '}
+          onClick={onSideout}
         >
           {children}
         </NavLink>

@@ -4,7 +4,7 @@ import Aux from '../../../Aux/Aux';
 import NavItem from './NavigationItem';
 import classes from './Navigations.scss';
 
-const Header = ({ navAlign, listSpace }) => (
+const Header = ({ navAlign, listSpace, onSideout }) => (
   <Aux>
     <ul
       className={[
@@ -14,19 +14,24 @@ const Header = ({ navAlign, listSpace }) => (
       ].join(' ')}
       style={{ marginTop: listSpace + 'px' }}
     >
-      <NavItem navAlign={navAlign} toLink="/" activeClassName={false}>
+      <NavItem
+        navAlign={navAlign}
+        toLink="/"
+        activeClassName={false}
+        onSideout={onSideout}
+      >
         Home
       </NavItem>
-      <NavItem navAlign={navAlign} toLink="/sobre">
+      <NavItem navAlign={navAlign} toLink="/sobre" onSideout={onSideout}>
         Sobre de mí
       </NavItem>
-      <NavItem navAlign={navAlign} toLink="/ensenanza">
+      <NavItem navAlign={navAlign} toLink="/ensenanza" onSideout={onSideout}>
         Enseñanza
       </NavItem>
-      <NavItem navAlign={navAlign} toLink="/estilodevida">
+      <NavItem navAlign={navAlign} toLink="/estilodevida" onSideout={onSideout}>
         Estilo de Vida
       </NavItem>
-      <NavItem navAlign={navAlign} toLink="/contactos">
+      <NavItem navAlign={navAlign} toLink="/contactos" onSideout={onSideout}>
         Contactos
       </NavItem>
     </ul>

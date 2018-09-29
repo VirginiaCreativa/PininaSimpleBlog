@@ -16,6 +16,14 @@ class App extends Component {
     sidedrawer: false,
   };
 
+  handleSideDrawerClosed = () => {
+    this.setState({ sidedrawer: false });
+  };
+
+  handleOutSide = () => {
+    this.setState({ sidedrawer: false });
+  };
+
   handleSideDrawer = () => {
     this.setState(prevState => ({ sidedrawer: !prevState.sidedrawer }));
   };
@@ -46,6 +54,8 @@ class App extends Component {
               <HeaderSidedrawer
                 onShow={this.handleSideDrawer}
                 toggleNavbar={sidedrawer}
+                onClosed={this.handleSideDrawerClosed}
+                onSideout={this.handleOutSide}
               />
               <Layout>
                 <Switch>

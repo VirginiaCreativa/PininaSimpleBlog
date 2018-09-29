@@ -5,7 +5,7 @@ import Logo from '../../Logo/Logo';
 import SideDrawer from './SideDrawer';
 import classes from './HeaderSiderawer.scss';
 
-const HeaderSidedrawer = ({ onShow, toggleNavbar }) => (
+const HeaderSidedrawer = ({ onShow, toggleNavbar, onClosed, onSideout }) => (
   <Aux>
     <div
       className={[
@@ -20,7 +20,11 @@ const HeaderSidedrawer = ({ onShow, toggleNavbar }) => (
           <button className={classes.btnMenu} type="button" onClick={onShow} />
         </div>
       </Logo>
-      <SideDrawer toggleNavbar={toggleNavbar} />
+      <SideDrawer
+        toggleNavbar={toggleNavbar}
+        onClosed={onClosed}
+        onSideout={onSideout}
+      />
     </div>
   </Aux>
 );
