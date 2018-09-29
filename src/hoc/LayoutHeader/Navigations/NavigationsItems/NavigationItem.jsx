@@ -1,7 +1,6 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, withRouter } from 'react-router-dom';
 import bootstrap from 'bootstrap/scss/bootstrap.scss';
-import { withRouter } from 'react-router';
 import Aux from '../../../Aux/Aux';
 
 const NavigationItem = ({

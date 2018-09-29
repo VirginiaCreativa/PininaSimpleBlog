@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { hot } from 'react-hot-loader';
-import { Route, Switch, Redirect } from 'react-router-dom';
+import { Router, Route, Switch, Redirect } from 'react-router-dom';
 import bootstrapGrid from 'bootstrap/scss/bootstrap-grid.scss';
 import LayoutHeader from './hoc/LayoutHeader/LayoutHeader';
 import HeaderSidedrawer from './hoc/LayoutHeader/Navigations/SideDrawer/HeaderSidedrawer';
@@ -10,6 +10,7 @@ import Sobre from './containers/Sobre';
 import Ensenanza from './containers/Ensenanza';
 import EstiloDeVida from './containers/EstiloVida';
 import Contactos from './containers/Contactos';
+import NotFound from './components/NotFound/NotFound';
 
 class App extends Component {
   state = {
@@ -64,7 +65,8 @@ class App extends Component {
                   <Route path="/ensenanza" component={Ensenanza} />
                   <Route path="/estilodevida" component={EstiloDeVida} />
                   <Route path="/contactos" component={Contactos} />
-                  <Redirect to="/" />
+                  <Route path="/NotFound" component={NotFound} />
+                  <Redirect from="*" to="/NotFound" />
                 </Switch>
               </Layout>
             </div>
