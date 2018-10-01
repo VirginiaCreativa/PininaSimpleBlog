@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Layout from '../hoc/Layout/Layout';
+import LayoutSobre from '../components/SobreMi/SobreMi';
+import HeadingTitle from '../components/UI/HeadingTitle/HeadingTitle';
 
 class About extends Component {
   state = {};
@@ -7,7 +8,8 @@ class About extends Component {
   render() {
     return (
       <>
-        <h3>SOBRE MÍ</h3>
+        <HeadingTitle title="Sobre Mí" />
+        <LayoutSobre />
       </>
     );
   }

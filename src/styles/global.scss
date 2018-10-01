@@ -3,7 +3,7 @@ body {
 }
 p {
   font-family: 'Lato', serif !important;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 24px;
   word-spacing: 1px;
   color: #444444;
@@ -26,4 +26,13 @@ button {
   &:focus {
    outline: 0 !important;
   }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Zilla Slab', serif !important;
 }
