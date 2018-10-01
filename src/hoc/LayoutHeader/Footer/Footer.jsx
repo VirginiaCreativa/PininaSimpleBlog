@@ -3,6 +3,8 @@ import bootstrap from 'bootstrap/scss/bootstrap.scss';
 import Aux from '../../Aux/Aux';
 import classes from './Footer.scss';
 
+import { CURRENT_YEAR } from './Year';
+
 const Footer = ({ redAlign }) => {
   const classStyle = {
     textAlign: redAlign,
@@ -33,7 +35,7 @@ const Footer = ({ redAlign }) => {
           Dev by
           <span> @Virginia.Creativa</span>
         </p>
-        <p>Colombia @2018</p>
+        <p>Colombia @{CURRENT_YEAR}</p>
       </div>
     </Aux>
   );
