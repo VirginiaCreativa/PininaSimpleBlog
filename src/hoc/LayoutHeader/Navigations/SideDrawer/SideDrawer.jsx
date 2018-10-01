@@ -20,7 +20,7 @@ const SideDrawer = ({ toggleNavbar, onClosed, onSideout }) => {
           <Navigations
             navAlign="center"
             navSize="1.125"
-            listSpace="40"
+            listSpace="30"
             onSideout={onSideout}
           />
           <Footer redAlign="center" />
