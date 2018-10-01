@@ -60,12 +60,12 @@ class App extends Component {
               />
               <Layout>
                 <Switch>
-                  <Route path="/" exact component={Home} />
                   <Route path="/sobre" component={Sobre} />
                   <Route path="/ensenanza" component={Ensenanza} />
                   <Route path="/estilodevida" component={EstiloDeVida} />
                   <Route path="/contactos" component={Contactos} />
                   <Route path="/NotFound" component={NotFound} />
+                  <Route path="/" exact component={Home} />
                   <Redirect from="*" to="/NotFound" />
                 </Switch>
               </Layout>

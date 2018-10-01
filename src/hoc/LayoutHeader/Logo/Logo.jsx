@@ -12,7 +12,7 @@ const Logo = ({ sizeLogo, alignLogo, colorLogo, children }) => {
     <Aux>
       <div className={classes.Logo} style={classStyle}>
         <h1 style={classStyle}>PININA</h1>
-        <h6>Simple Blog</h6>
+        <h6>Todo Simple</h6>
         {children}
       </div>
     </Aux>
