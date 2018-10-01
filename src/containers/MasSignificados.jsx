@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import Layout from '../hoc/Layout/Layout';
 
-class About extends Component {
+class Ensenanza extends Component {
   state = {};
 
   render() {
     return (
       <>
-        <h3>ESTILO DE VIDA</h3>
+        <h3>MÁS SIGNFICADOS</h3>
       </>
     );
   }
 }
 
-export default About;
+export default Ensenanza;

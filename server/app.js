@@ -9,9 +9,10 @@ const webpackConfig = require('../webpack.config.js');
 
 const logger = require('./logger');
 const home = require('./routes/home');
-const sobre = require('./routes/sobre');
-const ensenanza = require('./routes/ensenanza');
-const estilodevida = require('./routes/estilodevida');
+const sobremi = require('./routes/sobremi');
+const massignificados = require('./routes/massignificados');
+const cursos = require('./routes/cursos');
+const blog = require('./routes/blog');
 const contactos = require('./routes/contactos');
 const api = require('./routes/api');
 
@@ -43,9 +44,10 @@ app.use(hotmiddleware(compiler));
 
 // ROUTER
 app.use('/', home);
-app.use('/sobre', sobre);
-app.use('/ensenanza', ensenanza);
-app.use('/estilodevida', estilodevida);
+app.use('/sobremi', sobremi);
+app.use('/massignificados', massignificados);
+app.use('/cursos', cursos);
+app.use('/blog', blog);
 app.use('/contactos', contactos);
 app.use('/api', api);
 

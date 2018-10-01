@@ -7,7 +7,7 @@ class About extends Component {
   render() {
     return (
       <>
-        <h3>SOBRE MI</h3>
+        <h3>Blog</h3>
       </>
     );
   }

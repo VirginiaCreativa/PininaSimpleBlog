@@ -22,14 +22,21 @@ const Header = ({ navAlign, listSpace, onSideout }) => (
       >
         Home
       </NavItem>
-      <NavItem navAlign={navAlign} toLink="/sobre" onSideout={onSideout}>
-        Sobre de mí
+      <NavItem navAlign={navAlign} toLink="/sobremi" onSideout={onSideout}>
+        Sobre mí
       </NavItem>
-      <NavItem navAlign={navAlign} toLink="/ensenanza" onSideout={onSideout}>
-        Enseñanza
+      <NavItem
+        navAlign={navAlign}
+        toLink="/massignificados"
+        onSideout={onSideout}
+      >
+        + Significados
       </NavItem>
-      <NavItem navAlign={navAlign} toLink="/estilodevida" onSideout={onSideout}>
-        Estilo de Vida
+      <NavItem navAlign={navAlign} toLink="/cursos" onSideout={onSideout}>
+        Cursos
+      </NavItem>
+      <NavItem navAlign={navAlign} toLink="/blog" onSideout={onSideout}>
+        Blog
       </NavItem>
       <NavItem navAlign={navAlign} toLink="/contactos" onSideout={onSideout}>
         Contactos
