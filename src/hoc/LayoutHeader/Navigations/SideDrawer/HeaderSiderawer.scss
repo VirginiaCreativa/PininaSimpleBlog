@@ -7,12 +7,55 @@
     top: 60px;
     left: 10px;
     .btnMenu {
-      background: url('data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4Ij4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNTAxLjMzMyw5NkgxMC42NjdDNC43NzksOTYsMCwxMDAuNzc5LDAsMTA2LjY2N3M0Ljc3OSwxMC42NjcsMTAuNjY3LDEwLjY2N2g0OTAuNjY3YzUuODg4LDAsMTAuNjY3LTQuNzc5LDEwLjY2Ny0xMC42NjcgICAgUzUwNy4yMjEsOTYsNTAxLjMzMyw5NnoiIGZpbGw9IiMwMDAwMDAiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik01MDEuMzMzLDI0NS4zMzNIMTAuNjY3QzQuNzc5LDI0NS4zMzMsMCwyNTAuMTEyLDAsMjU2czQuNzc5LDEwLjY2NywxMC42NjcsMTAuNjY3aDQ5MC42NjcgICAgYzUuODg4LDAsMTAuNjY3LTQuNzc5LDEwLjY2Ny0xMC42NjdTNTA3LjIyMSwyNDUuMzMzLDUwMS4zMzMsMjQ1LjMzM3oiIGZpbGw9IiMwMDAwMDAiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik01MDEuMzMzLDM5NC42NjdIMTAuNjY3QzQuNzc5LDM5NC42NjcsMCwzOTkuNDQ1LDAsNDA1LjMzM0MwLDQxMS4yMjEsNC43NzksNDE2LDEwLjY2Nyw0MTZoNDkwLjY2NyAgICBjNS44ODgsMCwxMC42NjctNC43NzksMTAuNjY3LTEwLjY2N0M1MTIsMzk5LjQ0NSw1MDcuMjIxLDM5NC42NjcsNTAxLjMzMywzOTQuNjY3eiIgZmlsbD0iIzAwMDAwMCIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=') no-repeat left top;
       display: block;
       cursor: pointer;
-      min-width: 24px;
-      min-height: 24px;
+      min-width: 30px;
+      min-height: 30px;
       border: none;
+      background-color: transparent;
+      padding: 0;
+      &.On {
+        span {
+          background-color: transparent;
+          &:after {
+            transform: rotate(45deg) translate(5px, 5px);
+            background-color: #fff;
+          }
+          
+          &:before {
+            transform: rotate(-45deg) translate(7px, -8px);
+            background-color: #fff;
+          }
+        }
+      }
+      span {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: $gray_dark;
+        transition: all 0.3s;
+        backface-visibility: hidden;
+        &:after,
+        &:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background-color: $gray_dark;
+          transition: all 0.3s;
+          backface-visibility: hidden;
+          border-radius: 2px;
+        }
+        &:after {
+          top: -9px;
+        }
+        &:before {
+          top: 9px;
+        }
+        
+      }
     }
   }
 }
