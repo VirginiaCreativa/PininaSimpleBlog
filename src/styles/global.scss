@@ -12,5 +12,12 @@ p, h1, h2, h3, h4, h5, h6, a, span {
   &::selection {
     background-color: $black;
     color: #fff;
+    @media (max-width: 575.98px) {
+      background-color: #fff;
+      color: $black;
+    }
   }
+}
+a {
+  text-decoration: none !important;
 }

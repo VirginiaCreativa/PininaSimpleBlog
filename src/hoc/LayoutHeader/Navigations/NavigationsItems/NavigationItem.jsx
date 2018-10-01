@@ -9,9 +9,11 @@ const NavigationItem = ({
   navAlign,
   children,
   onSideout,
+  navSize,
 }) => {
   const classStyle = {
     textAlign: navAlign,
+    fontSize: navSize + 'rem',
   };
   return (
     <Aux>

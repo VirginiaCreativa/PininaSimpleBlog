@@ -1,17 +1,10 @@
 import React, { Component } from 'react';
 import { hot } from 'react-hot-loader';
-import { Router, Route, Switch, Redirect } from 'react-router-dom';
 import bootstrapGrid from 'bootstrap/scss/bootstrap-grid.scss';
+import Routes from './hoc/Routes/Routes';
 import LayoutHeader from './hoc/LayoutHeader/LayoutHeader';
 import HeaderSidedrawer from './hoc/LayoutHeader/Navigations/SideDrawer/HeaderSidedrawer';
 import Layout from './hoc/Layout/Layout';
-import Home from './containers/Home';
-import SobreMi from './containers/SobreMi';
-import MasSignificados from './containers/MasSignificados';
-import Cursos from './containers/Cursos';
-import Blog from './containers/Blog';
-import Contactos from './containers/Contactos';
-import NotFound from './components/NotFound/NotFound';
 
 class App extends Component {
   state = {
@@ -60,16 +53,7 @@ class App extends Component {
                 onSideout={this.handleOutSide}
               />
               <Layout>
-                <Switch>
-                  <Route path="/sobremi" component={SobreMi} />
-                  <Route path="/massignificados" component={MasSignificados} />
-                  <Route path="/cursos" component={Cursos} />
-                  <Route path="/blog" component={Blog} />
-                  <Route path="/contactos" component={Contactos} />
-                  <Route path="/NotFound" component={NotFound} />
-                  <Route path="/" exact component={Home} />
-                  <Redirect from="*" to="/NotFound" />
-                </Switch>
+                <Routes />
               </Layout>
             </div>
           </div>

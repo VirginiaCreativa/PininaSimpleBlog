@@ -4,7 +4,7 @@ import Aux from '../../../Aux/Aux';
 import NavItem from './NavigationItem';
 import classes from './Navigations.scss';
 
-const Header = ({ navAlign, listSpace, onSideout }) => (
+const Header = ({ navAlign, navSize, listSpace, onSideout }) => (
   <Aux>
     <ul
       className={[
@@ -19,26 +19,48 @@ const Header = ({ navAlign, listSpace, onSideout }) => (
         toLink="/"
         activeClassName={false}
         onSideout={onSideout}
+        navSize={navSize}
       >
         Home
       </NavItem>
-      <NavItem navAlign={navAlign} toLink="/sobremi" onSideout={onSideout}>
+      <NavItem
+        navAlign={navAlign}
+        toLink="/sobremi"
+        onSideout={onSideout}
+        navSize={navSize}
+      >
         Sobre mí
       </NavItem>
       <NavItem
         navAlign={navAlign}
         toLink="/massignificados"
         onSideout={onSideout}
+        navSize={navSize}
       >
         + Significados
       </NavItem>
-      <NavItem navAlign={navAlign} toLink="/cursos" onSideout={onSideout}>
+      <NavItem
+        navAlign={navAlign}
+        toLink="/cursos"
+        onSideout={onSideout}
+        navSize={navSize}
+      >
         Cursos
       </NavItem>
-      <NavItem navAlign={navAlign} toLink="/blog" onSideout={onSideout}>
+      <NavItem
+        navAlign={navAlign}
+        toLink="/blog"
+        onSideout={onSideout}
+        navSize={navSize}
+      >
         Blog
       </NavItem>
-      <NavItem navAlign={navAlign} toLink="/contactos" onSideout={onSideout}>
+      <NavItem
+        navAlign={navAlign}
+        toLink="/contactos"
+        onSideout={onSideout}
+        navSize={navSize}
+      >
         Contactos
       </NavItem>
     </ul>

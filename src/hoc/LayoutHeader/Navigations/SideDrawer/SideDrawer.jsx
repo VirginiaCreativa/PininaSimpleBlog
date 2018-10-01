@@ -17,7 +17,12 @@ const SideDrawer = ({ toggleNavbar, onClosed, onSideout }) => {
       <div className={attachedToggle}>
         <div className={classes.Center}>
           <Logo sizeLogo="3.825" alignLogo="center" colorLogo="#fff" />
-          <Navigations navAlign="center" listSpace="40" onSideout={onSideout} />
+          <Navigations
+            navAlign="center"
+            navSize="1.125"
+            listSpace="40"
+            onSideout={onSideout}
+          />
           <Footer redAlign="center" />
         </div>
       </div>
