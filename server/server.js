@@ -7,14 +7,14 @@ const middleware = require('webpack-dev-middleware');
 const hotmiddleware = require('webpack-hot-middleware');
 const webpackConfig = require('../webpack.config.js');
 
-const logger = require('./logger');
-const home = require('./routes/home');
-const sobremi = require('./routes/sobremi');
-const massignificados = require('./routes/massignificados');
-const cursos = require('./routes/cursos');
-const blog = require('./routes/blog');
-const contactos = require('./routes/contactos');
-const api = require('./routes/api');
+const logger = require('./logger.js');
+const home = require('./routes/home.js');
+const sobremi = require('./routes/sobremi.js');
+const massignificados = require('./routes/massignificados.js');
+const cursos = require('./routes/cursos.js');
+const blog = require('./routes/blog.js');
+const contactos = require('./routes/contactos.js');
+const api = require('./routes/api.js');
 
 const compiler = webpack(webpackConfig);
 

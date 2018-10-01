@@ -1,14 +1,14 @@
 const express = require('express');
 
 const router = express.Router();
-const dataTeaching = require('../../src/assets/data/teaching.json');
-const dataLifeStyle = require('../../src/assets/data/lifestyle.json');
+const dataSignificados = require('../../src/assets/data/signficados.json');
+const dataBlog = require('../../src/assets/data/blog.json');
 
-router.get('/teaching', (req, res) => {
-  res.send(dataTeaching);
+router.get('/significados', (req, res) => {
+  res.send(dataSignificados);
 });
-router.get('/lifestyle', (req, res) => {
-  res.send(dataLifeStyle);
+router.get('/blog', (req, res) => {
+  res.send(dataBlog);
 });
 
 module.exports = router;

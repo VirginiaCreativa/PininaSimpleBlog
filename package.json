@@ -4,8 +4,8 @@
   "description": "Boilerplate for react and webpack",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=development  webpack-serve && nodemon server/app.js",
-    "server": "nodemon server/app.js",
+    "start": "cross-env NODE_ENV=development  webpack-serve && nodemon server/server.js",
+    "server": "nodemon server/server.js",
     "prod": "cross-env NODE_ENV=production webpack",
     "format": "prettier --write 'packages/**/*.js'",
     "test": "jest --watchAll --coverage",
