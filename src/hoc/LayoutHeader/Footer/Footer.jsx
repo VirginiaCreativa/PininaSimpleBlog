@@ -3,7 +3,7 @@ import bootstrap from 'bootstrap/scss/bootstrap.scss';
 import Aux from '../../Aux/Aux';
 import classes from './Footer.scss';
 
-import { CURRENT_YEAR } from './Year';
+import { CURRENT_YEAR } from '../../../scripts/config';
 
 const Footer = ({ redAlign }) => {
   const classStyle = {

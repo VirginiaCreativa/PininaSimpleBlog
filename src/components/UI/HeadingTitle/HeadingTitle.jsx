@@ -3,15 +3,27 @@ import bootstrap from 'bootstrap/scss/bootstrap.scss';
 import classes from './HeadingTitle.scss';
 import Aux from '../../../hoc/Aux/Aux';
 
+import { CURRENT_MESES } from '../../../scripts/config';
+
 const HeadeingTitle = ({ title, detailsHead }) => {
   let details;
 
   if (detailsHead === 1) {
     details = (
       <ul className={bootstrap['list-unstyled']}>
-        <li className={bootstrap['list-inline-item']}>item 1</li>
-        <li className={bootstrap['list-inline-item']}>item 2</li>
-        <li className={bootstrap['list-inline-item']}>item 3</li>
+        <li className={bootstrap['list-inline-item']}>
+          <i className="far fa-clock" />
+          {CURRENT_MESES}
+        </li>
+        <li className={bootstrap['list-inline-item']}>
+          <i className="far fa-eye" />
+          <span className={classes.Count}>15</span>
+          vista
+        </li>
+        <li className={bootstrap['list-inline-item']}>
+          <i className="fas fa-share-alt" />
+          compartir
+        </li>
       </ul>
     );
   } else if (detailsHead === 2) {
@@ -19,12 +31,24 @@ const HeadeingTitle = ({ title, detailsHead }) => {
       <div className={classes.detailsAdv}>
         <ul className={bootstrap['list-unstyled']}>
           <li className={bootstrap['list-inline-item']}>item 1</li>
-          <li className={bootstrap['list-inline-item']}>item 2</li>
+          <li className={bootstrap['list-inline-item']}>
+            <i className="far fa-clock" />
+            Item
+          </li>{' '}
         </ul>
         <ul className={bootstrap['list-unstyled']}>
-          <li className={bootstrap['list-inline-item']}>item 3</li>
-          <li className={bootstrap['list-inline-item']}>item 4</li>
-          <li className={bootstrap['list-inline-item']}>item 5</li>
+          <li className={bootstrap['list-inline-item']}>
+            <i className="far fa-eye" />
+            Item
+          </li>
+          <li className={bootstrap['list-inline-item']}>
+            <i className="far fa-comments" />
+            item 2
+          </li>
+          <li className={bootstrap['list-inline-item']}>
+            <i className="fas fa-share-alt" />
+            item 3
+          </li>
         </ul>
       </div>
     );
