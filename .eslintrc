@@ -70,7 +70,8 @@
     "no-path-concat": 0,
     "no-console": 0,
     "no-unused-vars": 0,
-    "react/prop-types": 0
+    "react/prop-types": 0,
+    "react/destructuring-assignment": 0
   },
   "env": {
     "es6": true,

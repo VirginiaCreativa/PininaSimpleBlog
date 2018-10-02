@@ -3,12 +3,14 @@ import LayoutSobre from '../components/SobreMi/SobreMi';
 import HeadingTitle from '../components/UI/HeadingTitle/HeadingTitle';
 
 class About extends Component {
-  state = {};
+  state = {
+    details: 0,
+  };
 
   render() {
     return (
       <>
-        <HeadingTitle title="Sobre Mí" />
+        <HeadingTitle title="Sobre Mí" detailsHead={this.state.details} />
         <LayoutSobre />
       </>
     );
