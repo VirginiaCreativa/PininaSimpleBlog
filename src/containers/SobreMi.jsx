@@ -4,7 +4,7 @@ import HeadingTitle from '../components/UI/HeadingTitle/HeadingTitle';
 
 class About extends Component {
   state = {
-    details: 1,
+    details: 2,
   };
 
   render() {

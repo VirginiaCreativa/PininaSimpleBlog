@@ -5,7 +5,7 @@ import Aux from '../../../hoc/Aux/Aux';
 
 import { CURRENT_MESES } from '../../../scripts/config';
 
-const HeadeingTitle = ({ title, detailsHead }) => {
+const HeadeingTitle = ({ title, detailsHead, categDetails }) => {
   let details;
 
   if (detailsHead === 1) {
@@ -18,36 +18,120 @@ const HeadeingTitle = ({ title, detailsHead }) => {
         <li className={bootstrap['list-inline-item']}>
           <i className="far fa-eye" />
           <span className={classes.Count}>15</span>
-          vista
+          vistas
         </li>
-        <li className={bootstrap['list-inline-item']}>
+        <li
+          className={[bootstrap['list-inline-item'], classes.Compartir].join(
+            ' ',
+          )}
+        >
           <i className="fas fa-share-alt" />
-          compartir
+          <span>compartir</span>
+          <div className={classes.toggleCompart}>
+            <ul className={bootstrap['list-unstyled']}>
+              <li>
+                <a href="/">
+                  <i className="fab fa-facebook-square" />
+                  Facebook
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  <i className="fab fa-twitter" />
+                  Twitter
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  <i className="fab fa-linkedin-in" />
+                  Linkedin
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  <i className="fab fa-whatsapp" />
+                  WhatsApp
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  <i className="far fa-envelope" />
+                  E-mail
+                </a>
+              </li>
+            </ul>
+          </div>
         </li>
       </ul>
     );
   } else if (detailsHead === 2) {
     details = (
       <div className={classes.detailsAdv}>
-        <ul className={bootstrap['list-unstyled']}>
-          <li className={bootstrap['list-inline-item']}>item 1</li>
+        <ul
+          className={[bootstrap['list-unstyled'], classes.BaseAdv1].join(' ')}
+        >
+          <li className={bootstrap['list-inline-item']}>
+            <div className={classes.Categoria}>Blog</div>
+          </li>
           <li className={bootstrap['list-inline-item']}>
             <i className="far fa-clock" />
-            Item
-          </li>{' '}
+            {CURRENT_MESES}
+          </li>
         </ul>
-        <ul className={bootstrap['list-unstyled']}>
+        <ul
+          className={[bootstrap['list-unstyled'], classes.BaseAdv2].join(' ')}
+        >
           <li className={bootstrap['list-inline-item']}>
             <i className="far fa-eye" />
-            Item
+            <span className={classes.Count}>15</span>
+            vistas
           </li>
           <li className={bootstrap['list-inline-item']}>
-            <i className="far fa-comments" />
-            item 2
+            <i className="fas fa-comments" />
+            <span className={classes.Count}>3</span>
+            comentarios
           </li>
-          <li className={bootstrap['list-inline-item']}>
+          <li
+            className={[bootstrap['list-inline-item'], classes.Compartir].join(
+              ' ',
+            )}
+          >
             <i className="fas fa-share-alt" />
-            item 3
+            <span>compartir</span>
+            <div className={classes.toggleCompart}>
+              <ul className={bootstrap['list-unstyled']}>
+                <li>
+                  <a href="/">
+                    <i className="fab fa-facebook-square" />
+                    Facebook
+                  </a>
+                </li>
+                <li>
+                  <a href="/">
+                    <i className="fab fa-twitter" />
+                    Twitter
+                  </a>
+                </li>
+                <li>
+                  <a href="/">
+                    <i className="fab fa-linkedin-in" />
+                    Linkedin
+                  </a>
+                </li>
+                <li>
+                  <a href="/">
+                    <i className="fab fa-whatsapp" />
+                    WhatsApp
+                  </a>
+                </li>
+                <li>
+                  <a href="/">
+                    <i className="far fa-envelope" />
+                    E-mail
+                  </a>
+                </li>
+              </ul>
+            </div>
           </li>
         </ul>
       </div>
