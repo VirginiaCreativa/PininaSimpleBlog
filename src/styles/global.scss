@@ -27,7 +27,6 @@ button {
    outline: 0 !important;
   }
 }
-
 h1,
 h2,
 h3,
@@ -36,3 +35,13 @@ h5,
 h6 {
   font-family: 'Zilla Slab', serif !important;
 }
+blockquote {
+  padding: 10px 20px;
+  background-color: $gray_light;
+  font-style: italic;
+  font-size: 13.5px;
+  p {
+    margin-bottom: 0;
+  }
+}
+

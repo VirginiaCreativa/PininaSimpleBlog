@@ -1,0 +1,20 @@
+.boxFirme {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin: 40px 0 0;
+  width: 100%;
+  .Firme {
+    position: relative;
+    overflow: hidden;
+    height: 140px;
+    width: 140px;
+    border-radius: 100%;
+    img {
+      position: absolute;
+      left: 0;
+      top: -58px;
+      max-height: 179%;
+    }
+  }
+}
