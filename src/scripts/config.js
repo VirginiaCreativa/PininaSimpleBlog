@@ -14,7 +14,7 @@ const meses = [
 ];
 const date = new Date();
 const CURRENT_MESES = `${date.getDate()} de ${
-  meses[date.getDate()]
+  meses[date.getMonth()]
 } de ${date.getFullYear()}`;
 
 const CURRENT_YEAR = new Date().getFullYear();
