@@ -66,11 +66,9 @@ module.exports = {
     dev: {
       publicPath: commonPaths.root,
     },
-    publicPath: commonPaths.root,
     open: false,
     port: 3000,
     reload: true,
-    default: true,
   },
   resolve: {
     modules: ['src', 'node_modules'],

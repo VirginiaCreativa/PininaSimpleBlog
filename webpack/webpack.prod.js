@@ -8,7 +8,6 @@ module.exports = {
     filename: `${commonPaths.jsFolder}/[name].[hash].js`,
     path: commonPaths.outputPath,
     chunkFilename: '[name].[chunkhash].js',
-    publicPath: '/',
   },
   module: {
     rules: [
