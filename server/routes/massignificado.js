@@ -3,6 +3,6 @@ const express = require('express');
 const router = express.Router();
 
 router.get('/', (req, res) => {
-  res.send('Más Significados');
+  res.send('Más Significado');
 });
 module.exports = router;

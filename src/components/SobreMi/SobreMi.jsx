@@ -4,7 +4,7 @@ import Aux from '../../hoc/Aux/Aux';
 
 const SobreMi = ({ children }) => (
   <Aux>
-    <section>{children}</section>
+    <div>{children}</div>
     <Firme />
   </Aux>
 );

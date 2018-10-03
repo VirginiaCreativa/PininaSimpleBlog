@@ -33,7 +33,7 @@ const Header = ({ navAlign, navSize, listSpace, onSideout }) => (
       </NavItem>
       <NavItem
         navAlign={navAlign}
-        toLink="/massignificados"
+        toLink="/massignificado"
         onSideout={onSideout}
         navSize={navSize}
       >

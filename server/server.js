@@ -10,7 +10,7 @@ const webpackConfig = require('../webpack.config.js');
 const logger = require('./logger.js');
 const home = require('./routes/home.js');
 const sobremi = require('./routes/sobremi.js');
-const massignificados = require('./routes/massignificados.js');
+const massignificado = require('./routes/massignificado.js');
 const cursos = require('./routes/cursos.js');
 const blog = require('./routes/blog.js');
 const contactos = require('./routes/contactos.js');
@@ -45,7 +45,7 @@ app.use(hotmiddleware(compiler));
 // ROUTER
 app.use('/', home);
 app.use('/sobremi', sobremi);
-app.use('/massignificados', massignificados);
+app.use('/massignificado', massignificado);
 app.use('/cursos', cursos);
 app.use('/blog', blog);
 app.use('/contactos', contactos);
