@@ -3,21 +3,17 @@ const fs = require('fs');
 
 const router = express.Router();
 
-const dataSignificado = fs.readFileSync(
-  './src/assets/data/signficado.json',
-  'utf8',
-);
-const dataBlog = require('../../src/assets/data/blog.json');
+const dataSignificado = fs.readFileSync('./src/assets/data/signficado.json');
+const dataBlog = fs.readFileSync('./src/assets/data/blog.json');
 
 const datasSign = JSON.parse(dataSignificado);
-// const dataSignificado = fs.readFileSync('../../src/assets/data/signficado.json');
-// const datasSign = JSON.parse(dataSignificados);
+const datasBlog = JSON.parse(dataBlog);
 
 router.get('/significado', (req, res) => {
   res.send(datasSign);
 });
 router.get('/blog', (req, res) => {
-  res.send(dataBlog);
+  res.send(datasBlog);
 });
 
 module.exports = router;
