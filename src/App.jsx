@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import { hot } from 'react-hot-loader';
 import bootstrapGrid from 'bootstrap/scss/bootstrap-grid.scss';
 import Routes from './components/Routes/Routes';
 import LayoutHeader from './hoc/LayoutHeader/LayoutHeader';
 import HeaderSidedrawer from './hoc/LayoutHeader/Navigations/SideDrawer/HeaderSidedrawer';
 import Layout from './hoc/Layout/Layout';
+
+import MasSignificado from './containers/MasSignificado';
 
 class App extends Component {
   state = {

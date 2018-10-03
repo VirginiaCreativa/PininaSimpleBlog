@@ -5,6 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const commonPaths = require('./paths');
 
 module.exports = {
+  name: 'des',
   entry: commonPaths.entryPath,
   module: {
     rules: [
@@ -65,6 +66,8 @@ module.exports = {
     content: commonPaths.entryPath,
     dev: {
       publicPath: commonPaths.root,
+      hot: true,
+      reload: true,
     },
     open: false,
     port: 3000,
@@ -76,6 +79,8 @@ module.exports = {
   },
   plugins: [
     new webpack.ProgressPlugin(),
+    new webpack.optimize.OccurrenceOrderPlugin(),
+    new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       template: commonPaths.templatePath,
       filename: 'index.html',

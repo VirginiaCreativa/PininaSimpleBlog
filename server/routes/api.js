@@ -1,11 +1,20 @@
 const express = require('express');
+const fs = require('fs');
 
 const router = express.Router();
-const dataSignificados = require('../../src/assets/data/signficados.json');
+
+const dataSignificado = fs.readFileSync(
+  './src/assets/data/signficado.json',
+  'utf8',
+);
 const dataBlog = require('../../src/assets/data/blog.json');
 
-router.get('/significados', (req, res) => {
-  res.send(dataSignificados);
+const datasSign = JSON.parse(dataSignificado);
+// const dataSignificado = fs.readFileSync('../../src/assets/data/signficado.json');
+// const datasSign = JSON.parse(dataSignificados);
+
+router.get('/significado', (req, res) => {
+  res.send(datasSign);
 });
 router.get('/blog', (req, res) => {
   res.send(dataBlog);

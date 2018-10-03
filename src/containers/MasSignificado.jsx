@@ -1,16 +1,26 @@
 import React, { Component } from 'react';
-import Layout from '../hoc/Layout/Layout';
+import axios from 'axios';
+import MasSignificadoLayout from '../components/MasSignificado/MasSignificado';
 
-class Ensenanza extends Component {
+class MasSignificado extends Component {
   state = {};
+
+  async componentDidMount() {
+    const response = await axios.get('/api/significado');
+    console.log(response);
+    if (response.status !== 200) {
+      throw Error(response.message);
+    }
+    return response;
+  }
 
   render() {
     return (
       <>
-        <h3>MÁS SIGNFICADOS</h3>
+        <MasSignificadoLayout />
       </>
     );
   }
 }
 
-export default Ensenanza;
+export default MasSignificado;

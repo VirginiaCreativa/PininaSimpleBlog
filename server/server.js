@@ -1,7 +1,9 @@
 const express = require('express');
+const path = require('path');
 // const mongoose = require('mongoose');
 const app = express();
 const router = express.Router();
+const fs = require('fs');
 const webpack = require('webpack');
 const middleware = require('webpack-dev-middleware');
 const hotmiddleware = require('webpack-hot-middleware');
@@ -36,8 +38,7 @@ app.use(express.json());
 app.use(
   middleware(compiler, {
     noInfo: true,
-    hot: true,
-    publicPath: webpackConfig.output.path,
+    publicPath: webpackConfig.dev,
   }),
 );
 app.use(hotmiddleware(compiler));
