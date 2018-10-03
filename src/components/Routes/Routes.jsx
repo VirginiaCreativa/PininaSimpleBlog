@@ -18,6 +18,7 @@ class Routes extends Component {
         <Switch>
           <Route path="/sobremi" component={SobreMi} />
           <Route path="/massignificado" component={MasSignificado} />
+          <Route path="/massignificado/:id" component={MasSignificado} />
           <Route path="/cursos" component={Cursos} />
           <Route path="/blog" component={Blog} />
           <Route path="/contactos" component={Contactos} />
