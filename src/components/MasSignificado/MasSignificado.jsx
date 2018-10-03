@@ -1,16 +1,13 @@
 import React, { Component } from 'react';
 import MasSignificadoItem from './MasSignificadoItem/MasSignificadoItem';
+import Aux from '../../hoc/Aux/Aux';
 
-class MasSignificado extends Component {
-  state = {};
-
-  render() {
-    return (
-      <div>
-        <MasSignificadoItem />
-      </div>
-    );
-  }
-}
+const MasSignificado = ({ signDatas }) => (
+  <Aux>
+    {signDatas.map(item => (
+      <MasSignificadoItem key={item.id} {...item} />
+    ))}
+  </Aux>
+);
 
 export default MasSignificado;

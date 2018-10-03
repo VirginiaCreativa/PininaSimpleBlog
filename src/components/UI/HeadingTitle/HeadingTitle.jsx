@@ -5,7 +5,7 @@ import Aux from '../../../hoc/Aux/Aux';
 
 import { CURRENT_MESES } from '../../../scripts/config';
 
-const HeadeingTitle = ({ title, detailsHead, categDetails }) => {
+const HeadeingTitle = ({ title, date, detailsHead, categDetails }) => {
   let details;
 
   if (detailsHead === 1) {
@@ -13,7 +13,7 @@ const HeadeingTitle = ({ title, detailsHead, categDetails }) => {
       <ul className={bootstrap['list-unstyled']}>
         <li className={bootstrap['list-inline-item']}>
           <i className="far fa-clock" />
-          {CURRENT_MESES}
+          {CURRENT_MESES || date}
         </li>
         <li className={bootstrap['list-inline-item']}>
           <i className="far fa-eye" />

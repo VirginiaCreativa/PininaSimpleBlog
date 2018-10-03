@@ -2,22 +2,24 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import MasSignificadoLayout from '../components/MasSignificado/MasSignificado';
 
+const apiPoint = '/api/significado';
+
 class MasSignificado extends Component {
-  state = {};
+  state = {
+    significados: [],
+  };
 
   async componentDidMount() {
-    const response = await axios.get('/api/significado');
-    console.log(response);
-    if (response.status !== 200) {
-      throw Error(response.message);
-    }
+    const response = await axios.get(apiPoint).then(res => {
+      this.setState({ significados: res.data });
+    });
     return response;
   }
 
   render() {
     return (
       <>
-        <MasSignificadoLayout />
+        <MasSignificadoLayout signDatas={this.state.significados} />
       </>
     );
   }
