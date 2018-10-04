@@ -13,9 +13,11 @@ const MasSignificadoItem = ({ title, date, image, content }) => (
       <HeadingTitle title={title} detailsHead={details} date={date} />
       <Image srcImg={image} altImg={title} />
       <p>{content}</p>
-      <Link to="/" className={classes.btnReadMore}>
-        Sigue leyendo...
-      </Link>
+      <div className={classes.ReadMore}>
+        <Link to="/" className={classes.BtnMore}>
+          Sigue leyendo ...
+        </Link>
+      </div>
     </div>
   </Aux>
 );

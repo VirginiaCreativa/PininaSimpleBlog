@@ -7,7 +7,6 @@ module.exports = {
     index: path.resolve(__dirname, '../', 'src/index.jsx'),
     imports: path.resolve(__dirname, '../', 'src/scripts/imports.js'),
     config: path.resolve(__dirname, '../', 'src/scripts/config.js'),
-    main: 'webpack-hot-middleware/client?reload=true',
   },
   templatePath: path.resolve(__dirname, '../', 'src/index.html'),
   imagesFolder: 'images',

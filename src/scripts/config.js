@@ -1,3 +1,5 @@
+require('webpack-hot-middleware/client?reload=true');
+
 const meses = [
   'Enero',
   'Febrero',
