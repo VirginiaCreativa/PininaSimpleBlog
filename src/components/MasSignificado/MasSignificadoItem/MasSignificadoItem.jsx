@@ -7,17 +7,17 @@ import classes from './MasSignificadoItem.scss';
 
 const details = 1;
 
-const MasSignficadosItem = ({ title, date, image, resumen }) => (
+const MasSignificadoItem = ({ title, date, image, content }) => (
   <Aux>
-    <div className={classes.MasSignficado}>
+    <div className={classes.MasSignficadoItem}>
       <HeadingTitle title={title} detailsHead={details} date={date} />
       <Image srcImg={image} altImg={title} />
-      <p>{resumen}</p>
-      <Link to="/:id" className={classes.btnDetalle}>
+      <p>{content}</p>
+      <Link to="/" className={classes.btnReadMore}>
         Sigue leyendo...
       </Link>
     </div>
   </Aux>
 );
 
-export default MasSignficadosItem;
+export default MasSignificadoItem;

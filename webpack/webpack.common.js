@@ -78,9 +78,9 @@ module.exports = {
     extensions: ['*', '.js', '.jsx', '.json', '.css', '.scss'],
   },
   plugins: [
-    new webpack.ProgressPlugin(),
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
+    new webpack.ProgressPlugin(),
     new HtmlWebpackPlugin({
       template: commonPaths.templatePath,
       filename: 'index.html',

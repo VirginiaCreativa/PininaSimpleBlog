@@ -35,13 +35,13 @@ app.use(logger);
 app.use(express.static(__dirname + '/dist'));
 app.use(express.json());
 
+app.use(hotmiddleware(compiler));
 app.use(
   middleware(compiler, {
     noInfo: true,
     publicPath: webpackConfig.dev,
   }),
 );
-app.use(hotmiddleware(compiler));
 
 // ROUTER
 app.use('/', home);

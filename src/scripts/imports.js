@@ -4,4 +4,4 @@ import '../styles/variables.scss';
 import '../styles/imports.scss';
 import '../styles/global.scss';
 
-require('webpack-hot-middleware/client');
+require('webpack-hot-middleware/client?reload=true');
