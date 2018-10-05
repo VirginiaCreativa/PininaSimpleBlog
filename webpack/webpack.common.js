@@ -5,7 +5,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const commonPaths = require('./paths');
 
 module.exports = {
-  name: 'des',
   entry: commonPaths.entryPath,
   module: {
     rules: [
@@ -65,13 +64,17 @@ module.exports = {
     },
     content: commonPaths.entryPath,
     dev: {
-      publicPath: commonPaths.root,
       hot: true,
       reload: true,
+      noInfo: true,
     },
     open: false,
     port: 3000,
     reload: true,
+    hotClient: {
+      autoConfigure: false,
+      allEntries: true,
+    },
   },
   resolve: {
     modules: ['src', 'node_modules'],

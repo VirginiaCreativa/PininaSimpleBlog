@@ -4,7 +4,7 @@
   "description": "Boilerplate for react and webpack",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=development webpack-serve && nodemon server/server.js",
+    "start": "nodemon server/server.js --verbose && cross-env NODE_ENV=development webpack-serve",
     "server": "nodemon server/server.js",
     "prod": "cross-env NODE_ENV=production webpack",
     "format": "prettier --write 'packages/**/*.js'",
@@ -137,6 +137,7 @@
     "webpack": "4.19.1",
     "webpack-cli": "3.1.0",
     "webpack-dev-middleware": "^3.4.0",
+    "webpack-hot-client": "^4.1.1",
     "webpack-hot-middleware": "^2.24.2",
     "webpack-merge": "4.1.4",
     "webpack-serve": "2.0.2"

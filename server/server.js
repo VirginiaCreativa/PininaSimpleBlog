@@ -1,9 +1,7 @@
 const express = require('express');
-const path = require('path');
-// const mongoose = require('mongoose');
+
 const app = express();
 const router = express.Router();
-const fs = require('fs');
 const webpack = require('webpack');
 const middleware = require('webpack-dev-middleware');
 const hotmiddleware = require('webpack-hot-middleware');
@@ -20,22 +18,17 @@ const api = require('./routes/api.js');
 
 const compiler = webpack(webpackConfig);
 
-// mongoose
-//   .connect(
-//     'mongodb://localhost:27017/pininablog',
-//     {
-//       useNewUrlParser: true,
-//     },
-//   )
-//   .then(() => console.log('Connectd to MongoDB...'))
-//   .catch(err => console.error('Could not connect to MongoDB...', err));
-
 app.use(logger);
 
 app.use(express.static(__dirname + '/dist'));
 app.use(express.json());
 
-app.use(hotmiddleware(compiler));
+app.use(
+  hotmiddleware(compiler, {
+    heartbeat: 2000,
+  }),
+);
+
 app.use(
   middleware(compiler, {
     noInfo: true,
